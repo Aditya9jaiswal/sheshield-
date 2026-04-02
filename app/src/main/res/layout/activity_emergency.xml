@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/emergencyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/emergency">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvEmergencyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Mode"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvEmergencyDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency mode listens for shake + voice keywords automatically in the background."
+        android:textSize="16sp"
+        android:layout_below="@id/tvEmergencyTitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <!-- Emergency Switch -->
+    <Switch
+        android:id="@+id/switchEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Mode ON/OFF"
+        android:layout_below="@id/tvEmergencyDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"/>
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/tvEmergencyStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Inactive"
+        android:layout_below="@id/switchEmergency"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"/>
+</RelativeLayout>

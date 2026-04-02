@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Section -->
+        <TextView
+            android:id="@+id/tvSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingBottom="8dp"/>
+
+        <!-- English Name -->
+        <TextView
+            android:id="@+id/tvNameEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="4dp"/>
+
+        <!-- Hindi Name -->
+        <TextView
+            android:id="@+id/tvNameHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Description English -->
+        <TextView
+            android:id="@+id/tvDescEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"/>
+
+        <!-- Description Hindi -->
+        <TextView
+            android:id="@+id/tvDescHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"/>
+
+        <!-- Solution English -->
+        <TextView
+            android:id="@+id/tvSolutionEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"/>
+
+        <!-- Solution Hindi -->
+        <TextView
+            android:id="@+id/tvSolutionHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"/>
+
+        <!-- Helpline Call -->
+        <Button
+            android:id="@+id/btnCallHelpline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Helpline"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Website Link (Optional) -->
+        <TextView
+            android:id="@+id/tvWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:autoLink="web"
+            android:paddingTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"
+        tools:targetApi="33" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.SheShield0">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".SignupActivity" android:exported="false" />
+        <activity android:name=".FamilyDetailsActivity" android:exported="false" />
+        <activity android:name=".OtpVerificationActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".EmergencyActivity" android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".ResetPasswordActivity" android:exported="false" />
+        <activity android:name=".marge" android:exported="false" />
+        <activity android:name=".SolutionActivity" android:exported="false" />
+        <activity android:name=".TechnicalActivity" android:exported="false" />
+        <activity android:name=".Defence" android:exported="false" />
+        <activity android:name=".YogaActivity" android:exported="false" />
+        <activity android:name=".SelfDefenceActivity" android:exported="false" />
+        <activity android:name=".VideoViewActivity" android:exported="false" />
+        <activity android:name=".CameraActivity" android:exported="false" />
+        <activity android:name=".firebase.FirebaseStorageManager" android:exported="false" />
+        <activity android:name=".firebase.FirebaseDbManager" android:exported="false" />
+        <activity android:name=".firebase.FirebaseAuthManager" android:exported="false" />
+
+        <service
+            android:name=".services.EmergencyService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="camera|microphone|location"
+            tools:ignore="ForegroundServicePermission" />
+
+        <service
+            android:name=".services.VoiceActivationService"
+            android:exported="false"
+            android:foregroundServiceType="camera|microphone|location"
+            tools:ignore="ForegroundServicePermission" />
+
+        <service
+            android:name=".services.ShakeDetectionService"
+            android:exported="false"
+            android:foregroundServiceType="camera|microphone|location" tools:ignore="ForegroundServicePermission"/>
+    </application>
+
+</manifest>

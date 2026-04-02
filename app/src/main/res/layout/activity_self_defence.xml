@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvSelfDefenceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self Defence Techniques"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"/>
+
+        <!-- Motivational Slogan -->
+        <TextView
+            android:id="@+id/tvSelfDefenceSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“Your Safety, Your Right, Your Power!”"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="#D32F2F"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dr" />
+
+        <!-- Dr. Seema Rao Information -->
+        <TextView
+            android:id="@+id/tvDrSeemaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr. Seema Rao – India’s First Woman Commando Trainer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvDrSeemaDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr. Seema Rao, popularly known as India’s Wonder Woman, is the country’s first and only female commando trainer. She has spent over 20 years training elite forces like the Indian Army, Navy, Air Force, and various police units in close-quarter battle and self-defence techniques. She emphasizes that self-defence is not about fighting, but about protecting yourself, staying alert, and having the confidence to respond in dangerous situations."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginTop="10dp"/>
+
+        <!-- General Self Defence Description -->
+        <TextView
+            android:id="@+id/tvSelfDefenceDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn simple and powerful self-defence moves that help you stay confident and strong in difficult situations. Always remember, prevention and awareness are the first steps of safety."
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Motivation -->
+        <TextView
+            android:id="@+id/tvMotivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Be Brave • Be Strong • Be Safe"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:gravity="center"
+            android:layout_marginTop="14dp"/>
+
+        <!-- Video Links -->
+        <Button
+            android:id="@+id/btnDelhiPolicePart1"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:text="▶ Delhi Police Self Defence (Part 1)"
+            android:layout_margin="12dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnDelhiPolicePart2"
+            android:layout_width="240dp"
+            android:layout_margin="12dp"
+            android:layout_height="60dp"
+            android:text="▶ Delhi Police Self Defence (Part 2)"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnWCDTraining"
+            android:layout_margin="12dp"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:text="▶ Women and Child Development Training"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sheshield™"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

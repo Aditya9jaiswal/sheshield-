@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/card_background"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvFamilyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family Name"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvFamilyRelation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relation"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/tvFamilyMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/tvFamilyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/tvFamilyGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>

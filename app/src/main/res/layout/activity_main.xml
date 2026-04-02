@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    android:fitsSystemWindows="true">
+
+    <!-- Fragment Container (Top) -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+    <!-- Scrollable Emergency Buttons (Main Content) -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:visibility="visible"> <!-- Initially visible -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/btnWomenHelpline"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:soundEffectsEnabled="true"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/womenhelp"
+                android:contentDescription="@string/women_helpline_cd"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <ImageButton
+                    android:id="@+id/btnChildHelp"
+                    android:layout_width="92dp"
+                    android:layout_height="91dp"
+                    android:soundEffectsEnabled="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/child"
+                    android:contentDescription="@string/child_help_cd"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/btnSOS"
+                    android:layout_width="123dp"
+                    android:layout_height="141dp"
+                    android:soundEffectsEnabled="true"
+                    android:background="@drawable/sos"
+                    android:contentDescription="@string/sos_cd"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:id="@+id/btnAmbulance"
+                    android:layout_width="118dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:soundEffectsEnabled="true"
+                    android:background="@drawable/ambulance"
+                    android:contentDescription="@string/ambulance_cd"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="102dp"
+                android:layout_height="91dp"
+                android:soundEffectsEnabled="true"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="@string/logo_cd"
+                android:src="@drawable/devence" />
+
+            <Button
+                android:id="@+id/btnVoiceActivation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:soundEffectsEnabled="true"
+                android:text="@string/voice_activation"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/round_button_small"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnStartEmergency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_emergency"
+                android:soundEffectsEnabled="true"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/round_button_small"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:labelVisibilityMode="labeled"
+        app:itemRippleColor="@color/white"
+        app:itemIconTint="@drawable/bottom_nav_color_selector"
+        app:itemTextColor="@drawable/bottom_nav_color_selector"
+        app:menu="@menu/nav_menu" />
+
+</LinearLayout>
